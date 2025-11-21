@@ -49,7 +49,7 @@
         
         body {
             font-family: 'Noto Sans KR', sans-serif;
-            background: linear-gradient(135deg, #FFE5F1 0%, #FFF4E6 50%, #E8F5E9 100%);
+            background: linear-gradient(135deg, #FFF8F0 0%, #FFFBF5 50%, #F5F9FF 100%);
             min-height: 100vh;
             display: flex;
             justify-content: center;
@@ -63,12 +63,12 @@
             top: 0;
             left: 0;
             right: 0;
-            background: linear-gradient(135deg, #FFB6C1 0%, #FFD700 100%);
-            color: #333;
+            background: linear-gradient(135deg, #2C3E50 0%, #34495E 100%);
+            color: white;
             padding: 20px;
             text-align: center;
             z-index: 1000;
-            box-shadow: 0 4px 20px rgba(255,182,193,0.3);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
             overflow: hidden;
         }
         
@@ -133,9 +133,9 @@
         }
         
         .banner-btn {
-            background: white;
-            color: #FF6B9D;
-            border: 2px solid rgba(255,255,255,0.5);
+            background: rgba(255,255,255,0.95);
+            color: #2C3E50;
+            border: 2px solid rgba(255,255,255,0.3);
             padding: 12px 30px;
             border-radius: 25px;
             font-weight: 700;
@@ -149,14 +149,14 @@
         
         .banner-btn:hover {
             transform: scale(1.05);
-            box-shadow: 0 5px 20px rgba(255,255,255,0.5);
+            box-shadow: 0 5px 20px rgba(255,255,255,0.4);
             background: #FFF;
         }
         
         .container {
             background: white;
             border-radius: 40px;
-            box-shadow: 0 10px 40px rgba(255,182,193,0.2), 0 0 0 1px rgba(255,182,193,0.1);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.08), 0 0 0 1px rgba(0,0,0,0.04);
             max-width: 700px;
             width: 100%;
             padding: 50px;
@@ -171,7 +171,7 @@
             right: -50%;
             width: 200%;
             height: 200%;
-            background: radial-gradient(circle, rgba(255,182,193,0.08) 0%, transparent 70%);
+            background: radial-gradient(circle, rgba(255,215,0,0.05) 0%, transparent 70%);
             animation: rotate 20s linear infinite;
         }
         
@@ -191,12 +191,13 @@
         
         .start-section h1 {
             font-size: 2.5em;
-            background: linear-gradient(135deg, #FF6B9D 0%, #FFD700 100%);
+            background: linear-gradient(135deg, #FFD700 0%, #FFA500 50%, #FF8C00 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
             margin-bottom: 20px;
             font-weight: 900;
+            letter-spacing: -0.02em;
         }
         
         .start-section .emoji {
@@ -218,7 +219,7 @@
         }
         
         .start-btn {
-            background: linear-gradient(135deg, #FF6B9D 0%, #FFB6C1 50%, #FFD700 100%);
+            background: linear-gradient(135deg, #FFD700 0%, #FFA500 50%, #FF8C00 100%);
             color: white;
             border: none;
             padding: 20px 60px;
@@ -228,7 +229,7 @@
             margin-top: 30px;
             font-weight: 700;
             transition: all 0.3s ease;
-            box-shadow: 0 8px 25px rgba(255,107,157,0.4);
+            box-shadow: 0 8px 25px rgba(255,215,0,0.35);
             position: relative;
             overflow: hidden;
         }
@@ -250,7 +251,7 @@
         
         .start-btn:hover {
             transform: translateY(-3px);
-            box-shadow: 0 12px 35px rgba(255,107,157,0.5);
+            box-shadow: 0 12px 35px rgba(255,215,0,0.45);
         }
         
         .quiz-section {
@@ -268,7 +269,7 @@
         
         .progress-fill {
             height: 100%;
-            background: linear-gradient(90deg, #FF6B9D 0%, #FFB6C1 50%, #FFD700 100%);
+            background: linear-gradient(90deg, #FFD700 0%, #FFA500 50%, #FF8C00 100%);
             width: 0%;
             transition: width 0.5s ease;
             border-radius: 10px;
@@ -276,7 +277,7 @@
         
         .question-number {
             font-size: 1.1em;
-            color: #FF6B9D;
+            color: #FF8C00;
             font-weight: 700;
             margin-bottom: 15px;
         }
@@ -296,8 +297,8 @@
         }
         
         .option-btn {
-            background: linear-gradient(135deg, #FFF9F9 0%, #FFFBF0 100%);
-            border: 2px solid rgba(255,107,157,0.2);
+            background: linear-gradient(135deg, #FFFBF5 0%, #FFFEF8 100%);
+            border: 2px solid rgba(255,215,0,0.2);
             padding: 25px;
             border-radius: 20px;
             cursor: pointer;
@@ -309,7 +310,7 @@
             position: relative;
             overflow: hidden;
             -webkit-tap-highlight-color: transparent;
-            box-shadow: 0 2px 8px rgba(255,182,193,0.1);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
         }
         
         .option-btn::before {
@@ -319,16 +320,16 @@
             left: -100%;
             width: 100%;
             height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,107,157,0.15), transparent);
+            background: linear-gradient(90deg, transparent, rgba(255,215,0,0.15), transparent);
             transition: left 0.5s ease;
         }
         
         @media (hover: hover) {
             .option-btn:hover {
-                border-color: #FF6B9D;
+                border-color: #FFD700;
                 transform: translateX(10px);
-                background: linear-gradient(135deg, #FFF0F5 0%, #FFF8E1 100%);
-                box-shadow: 0 4px 15px rgba(255,107,157,0.2);
+                background: linear-gradient(135deg, #FFF8E1 0%, #FFFEF5 100%);
+                box-shadow: 0 4px 15px rgba(255,215,0,0.2);
             }
             
             .option-btn:hover::before {
@@ -338,7 +339,7 @@
         
         .option-btn:active {
             transform: scale(0.98);
-            background: linear-gradient(135deg, #FFE5F1 0%, #FFF4E6 100%);
+            background: linear-gradient(135deg, #FFF4E6 0%, #FFFBF0 100%);
         }
         
         .result-section {
@@ -353,7 +354,7 @@
             display: block;
             animation: pop 0.6s ease-out;
             border-radius: 30px;
-            box-shadow: 0 10px 30px rgba(255,182,193,0.3);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.12);
         }
         
         .share-buttons {
@@ -364,8 +365,8 @@
             flex-wrap: wrap;
         }
         
-        .share-btn-main, .save-image-btn {
-            background: linear-gradient(135deg, #FF6B9D 0%, #FFB6C1 50%, #FFD700 100%);
+        .share-btn-main {
+            background: linear-gradient(135deg, #FFD700 0%, #FFA500 50%, #FF8C00 100%);
             color: white;
             border: none;
             padding: 15px 50px;
@@ -374,7 +375,22 @@
             font-weight: 700;
             transition: all 0.3s ease;
             font-size: 1.2em;
-            box-shadow: 0 8px 25px rgba(255,107,157,0.4);
+            box-shadow: 0 8px 25px rgba(255,215,0,0.35);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .save-image-btn {
+            background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%);
+            color: white;
+            border: none;
+            padding: 15px 50px;
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: 700;
+            transition: all 0.3s ease;
+            font-size: 1.2em;
+            box-shadow: 0 8px 25px rgba(78,205,196,0.35);
             position: relative;
             overflow: hidden;
         }
@@ -394,18 +410,14 @@
             left: 100%;
         }
         
-        .share-btn-main:hover, .save-image-btn:hover {
+        .share-btn-main:hover {
             transform: translateY(-3px);
-            box-shadow: 0 12px 35px rgba(255,107,157,0.5);
-        }
-        
-        .save-image-btn {
-            background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%);
-            box-shadow: 0 8px 25px rgba(78,205,196,0.4);
+            box-shadow: 0 12px 35px rgba(255,215,0,0.45);
         }
         
         .save-image-btn:hover {
-            box-shadow: 0 12px 35px rgba(78,205,196,0.5);
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(78,205,196,0.45);
         }
         
         @keyframes pop {
@@ -423,17 +435,17 @@
         }
         
         .result-study-method {
-            background: linear-gradient(135deg, rgba(255,107,157,0.08) 0%, rgba(255,182,193,0.08) 50%, rgba(255,215,0,0.08) 100%);
+            background: linear-gradient(135deg, rgba(255,215,0,0.06) 0%, rgba(255,165,0,0.06) 50%, rgba(255,140,0,0.06) 100%);
             padding: 30px;
             border-radius: 25px;
             margin: 30px 0;
             text-align: left;
-            border: 2px solid rgba(255,107,157,0.15);
-            box-shadow: 0 4px 15px rgba(255,182,193,0.1);
+            border: 2px solid rgba(255,215,0,0.2);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
         }
         
         .result-study-method h3 {
-            background: linear-gradient(135deg, #FF6B9D 0%, #FFD700 100%);
+            background: linear-gradient(135deg, #FFD700 0%, #FFA500 50%, #FF8C00 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -462,9 +474,9 @@
         }
         
         .restart-btn {
-            background: linear-gradient(135deg, #FFB6C1 0%, #FFD700 100%);
+            background: linear-gradient(135deg, #F5F5F5 0%, #E8E8E8 100%);
             color: #333;
-            border: 2px solid rgba(255,255,255,0.5);
+            border: 2px solid rgba(0,0,0,0.08);
             padding: 15px 50px;
             font-size: 1.2em;
             border-radius: 50px;
@@ -472,7 +484,7 @@
             margin-top: 30px;
             font-weight: 700;
             transition: all 0.3s ease;
-            box-shadow: 0 6px 20px rgba(255,182,193,0.3);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.08);
             position: relative;
             overflow: hidden;
         }
@@ -484,7 +496,7 @@
             left: -100%;
             width: 100%;
             height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.5), transparent);
             transition: left 0.5s ease;
         }
         
@@ -494,7 +506,8 @@
         
         .restart-btn:hover {
             transform: translateY(-3px);
-            box-shadow: 0 10px 30px rgba(255,182,193,0.4);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+            background: linear-gradient(135deg, #FFF 0%, #F5F5F5 100%);
         }
         
         .disclaimer {
